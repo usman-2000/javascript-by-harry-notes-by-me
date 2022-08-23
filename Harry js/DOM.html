@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>DOM  MANIPULATING</title>
+</head>
+<body>
+    <div id="main" class="cont">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+    <div class="cont">
+        <p>hello</p>
+    </div>
+
+    <script>
+
+        let main = document.getElementById("main");
+        console.log(main)
+        let nav = document.getElementById("nav");
+        console.log(nav)
+
+            
+        // nav.innerHTML = "<li>CLAAAAAAAAAAS</li>"
+
+        let cont = document.getElementsByClassName("cont")
+        console.log(cont)
+        console.log(cont[0])
+        console.log(cont[1])
+
+        // CSS Selector
+
+        // let sel = document.querySelector(".cont")
+        // console.log(sel)
+
+        // let sel = document.querySelector("#nav>li")
+        // console.log(sel)
+
+        let sel = document.querySelectorAll("#nav>li")
+        console.log(sel)
+
+        sel[0].innerHTML = "insertedd"
+        sel[1].innerHTML = "insertedd 22"
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "name":"usman",
+    "roll no":202020202,
+    "present":true,
+    "Age":null,
+    "myObj":{
+        "name" : "nested",
+        "students":["sami","hassan","rizan"]
+    }
+
+}

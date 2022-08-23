@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    This Is for arrow function
+
+
+
+    <script>
+        // Normal function
+        // function greet(){
+        //     console.log("Hello bro!!")
+        // }
+        
+        // ARROW FUNCTION
+
+        let greet=()=>{
+            console.log("Hello World")
+        }
+
+        let greet2= () => console.log("Hello small");
+        greet()
+        greet2()
+
+
+        let sum = (a,b) =>{
+            return a+b
+        }
+
+        let sum2= (a,b)=>a+b;
+
+        let sum3 = (a,b)=>a+b;
+
+
+        // agar srf single argument ho to bina arrow k bhi likh skty hain....
+        let half = a => a/2;
+
+        // setInterval(() => {
+        //     console.log("helloooooooo")
+        // }, 2000);
+
+        // setTimeout(() => {
+        //     console.log("We are inside timeout")
+        // }, 3000);
+        
+            // speak function 
+            // arrow function ki yeh kahasiyat hai k yeh this.  mn bahir walay this ko consider kryga ...jab k aik normal function mn wo srf andr walay this. ko consider krta hai.
+
+            // sometimes it is called lexical this.
+        let obj1={
+            greeting : "GOOD MORNING" ,
+            names : ["usman","rahim","sami","amir"],
+            speak(){
+                this.names.forEach((man) =>{
+                    console.log(this.greeting + " SALAM " + man);
+                })
+            }
+
+        }
+
+        console.log(obj1.names)
+        obj1.speak()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON IN JS</title>
+</head>
+<body>
+    <div class="cont">
+        This is my JSON tutorial
+        <ul>
+            <li>JSON is used to store and exchange data</li>
+            <li>Javascript Object Notation(not a major link with JS)</li>
+            <li>Client to server, Server to client data transfer</li>
+            <li>Another is XML</li>
+            <li>Does not support comments</li>
+            <li>Support all popular programming language</li>
+        </ul>
+    </div>
+
+    <script>
+        let jsonObj ={
+            name: "usman",
+            class : "BSSE",
+            friend :"SAMI HASSAAN"
+        }
+
+        console.log(jsonObj);
+
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr)
+
+        myJsonStr  = myJsonStr.replace("usman", "Usman Rahim")
+        console.log(myJsonStr)
+
+        jsonObj = JSON.parse(myJsonStr)
+        console.log(jsonObj)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    <style>
+        div{
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 600px;
+            text-align: center;
+            background-color: pink;
+            border-bottom: 4px solid yellow;
+            border-right: 4px solid green;
+            border-left: 4px solid red;
+            height: 400px;
+            margin: auto;
+
+        }
+        p{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p> Current time is:</p> <br>
+        <span id="time"></span>
+    </div>
+
+
+    <script>
+
+        setInterval(updateTime,1000);
+        function updateTime() {
+            time.innerHTML = new Date;
+        }
+
+        // let dt = new Date;
+        // document.write(dt)
+
+        // let dt1 = new Date(0);
+        // document.write(dt1)
+
+
+        // // let newDate = new Date("years, months, date, hours, minutes , seconds, miliseconds")
+        // let newDate = new Date(2020,11,27,18,45,34)
+        // document.write(newDate)
+
+        // let yr = newDate.getFullYear()
+        // document.write(yr,"\n")
+
+        
+
+        // let month = newDate.getMonth()
+        // document.write(month,"\n")
+
+        // let day = newDate.getDate()
+        // document.write(day,"\n")
+
+        // let hours = newDate.getHours()
+        // document.write(hours,":")
+
+        // let mints = newDate.getMinutes()
+        // document.write(mints,":")
+
+        // let sec = newDate.getSeconds()
+        // document.write(sec)
+
+        // newDate.setDate(43);
+        // newDate.setHours(10);
+        // console.log(newDate)
+
+        // let msec = newDate.getMilliseconds()
+        // document.write("--miliseconds:",msec)
+        
+        
+
+    </script>
+</body>
+</html>

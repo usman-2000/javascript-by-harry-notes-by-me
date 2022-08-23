@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "This is string"
+        console.log(str)
+
+        // First occurrance of a substring
+        var position = str.indexOf("is")
+        console.log(position)
+
+        position = str.indexOf(" is")  //jab aik bar var laga liya aik variable k sath to phr bar bar use krny ki zrrt nahi
+        console.log(position)
+
+        // last side py kahan pr aa raha yeh
+        position = str.lastIndexOf("is")
+        console.log(position)
+
+        // substring from the string-- (1,6) is mn 1 sy lay kr 5 tak print hoga (one more method substring bhi hai (is mn negative values bs nahi lay sakty))
+        var substr1= str.slice(1,7);
+        console.log(substr1)
+
+        // is mn pehly wala argument btata hai k kahan sy start krna hai or dosra wala batata hai k length kitni honi chahiye
+        var substr2= str.substr(1,7)
+        console.log(substr2)
+
+        var replace1 = str.replace("string","usman")
+        console.log(replace1)
+        console.log(str)
+
+        var str = str.replace("string","usman")
+        console.log(str)
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        // trim remove the white spaces before and end of the string(not in the middle)
+        var newstring = ("        This is the       new string         ")
+        console.log(newstring)
+        console.log(newstring.trim())
+
+        // specific character ka pata lagana ho agr string sy to wo charAt function lagatay
+        var char2 = str.charAt(5)
+        console.log(char2)
+
+        
+
+
+    </script>
+</head>
+<body>
+    <h1>String Functions
+    </h1>
+</body>
+</html>

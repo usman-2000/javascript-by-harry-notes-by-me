@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and cleartimeout</title>
+</head>
+<body>
+    <p id="para"></p>
+    <span id="time"></span>
+
+
+    <script>
+        function greet(name,byetxt){
+            console.log("ASSALAM U ALAIKUM "+ name+ "\n"+ byetxt)
+        }
+
+        // greet("Usman")
+
+        // settimeout --> ALlows us to return the function at once after a specific time.
+        // cleartimeout --> Clears the settimeout function
+        // setInterval  --> Allows us to return repeatedly after interval of time
+
+        
+        // setTimeout(greet,5000 , "Usman Rahim","Allah Hafiz");
+
+        // setTimeout(greet(),5000);   -->wrong as it is calling the funtion inside the setTimeout
+
+        // var timeout= setTimeout(greet,5000 , "Usman Rahim","Allah Hafiz");
+        // console.log(timeout)
+
+        // clearTimeout(timeout)
+        
+        // setInterval(greet,2000,"Usman","Allah hafiz")
+
+        function displayTime(){
+            document.getElementById("para").innerHTML="The time is::::"
+            time = new Date
+            console.log(time)
+            document.getElementById("time").innerHTML=time;
+
+        }
+        setInterval(displayTime,1000)
+        
+    </script>
+</body>
+</html>
